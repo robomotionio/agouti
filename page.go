@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sclevine/agouti/api"
+	"github.com/robomotionio/agouti/api"
 )
 
 // A Page represents an open browser session. Pages may be created using the
@@ -254,9 +254,11 @@ func (p *Page) HTML() (string, error) {
 // Values provided in arguments are converted into javascript objects.
 // If the body returns a value, it will be unmarshalled into the result argument.
 // Simple example:
-//    var number int
-//    page.RunScript("return test;", map[string]interface{}{"test": 100}, &number)
-//    fmt.Println(number)
+//
+//	var number int
+//	page.RunScript("return test;", map[string]interface{}{"test": 100}, &number)
+//	fmt.Println(number)
+//
 // -> 100
 func (p *Page) RunScript(body string, arguments map[string]interface{}, result interface{}) error {
 	var (

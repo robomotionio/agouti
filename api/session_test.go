@@ -5,9 +5,9 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "github.com/sclevine/agouti/api"
-	"github.com/sclevine/agouti/api/internal/mocks"
-	. "github.com/sclevine/agouti/internal/matchers"
+	. "github.com/robomotionio/agouti/api"
+	"github.com/robomotionio/agouti/api/internal/mocks"
+	. "github.com/robomotionio/agouti/internal/matchers"
 )
 
 var _ = Describe("Session", func() {

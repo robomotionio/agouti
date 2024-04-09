@@ -5,9 +5,9 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/sclevine/agouti"
-	. "github.com/sclevine/agouti/matchers"
-	"github.com/sclevine/agouti/matchers/internal/mocks"
+	"github.com/robomotionio/agouti"
+	. "github.com/robomotionio/agouti/matchers"
+	"github.com/robomotionio/agouti/matchers/internal/mocks"
 )
 
 var _ = Describe("Page Matchers", func() {

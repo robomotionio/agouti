@@ -5,11 +5,11 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/sclevine/agouti/api"
-	. "github.com/sclevine/agouti/internal/element"
-	. "github.com/sclevine/agouti/internal/matchers"
-	"github.com/sclevine/agouti/internal/mocks"
-	"github.com/sclevine/agouti/internal/target"
+	"github.com/robomotionio/agouti/api"
+	. "github.com/robomotionio/agouti/internal/element"
+	. "github.com/robomotionio/agouti/internal/matchers"
+	"github.com/robomotionio/agouti/internal/mocks"
+	"github.com/robomotionio/agouti/internal/target"
 )
 
 var _ = Describe("ElementRepository", func() {
