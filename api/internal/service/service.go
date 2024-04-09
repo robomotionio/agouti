@@ -52,6 +52,11 @@ func (s *Service) Start(debug bool) error {
 		return fmt.Errorf("failed to parse command: %s", err)
 	}
 
+	// v1.19 fix
+	if errors.Is(command.Err, exec.ErrDot) {
+		command.Err = nil
+	}
+
 	if debug {
 		command.Stdout = os.Stdout
 		command.Stderr = os.Stderr
